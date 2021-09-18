@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>odd chceker</title>
+ 
+ 
+</head>
+<body>
+
+ <h1> Odd chceker </h1>
+
+ <label> Enter Number </label> 
+<br>
+ <input type="number" id="evenOdd" onkeyup="isCheck()">
+ <span id="showMssg">  </span>
+</br>
+
+
+
+</body>
+</html>
+
+<script>
+ 
+    function isCheck(){
+     var num = document.getElementById('evenOdd').value;
+     // alert(num);
+     if((num%2) == 0){
+     document.getElementById('showMssg').innerHTML = "Hurray! Number "+num+"  is an even number";
+     }
+     else{
+     document.getElementById('showMssg').innerHTML = "Oo No! "+num+"  is not an even number";
+     }
+    
+     if(num === ""){
+     document.getElementById('showMssg').innerHTML = "";
+     }
+    }
+    
+    </script>
